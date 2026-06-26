@@ -88,3 +88,30 @@ Recomendacion:
 Si el portal dice "en revision", no vuelvas a enviar salvo que exista rechazo.
 
 Reenviar durante revision puede confundir el seguimiento o consumir cupo innecesario.
+
+## Declaracion de cumplimiento antes de estar listo
+
+Sintoma:
+
+- El usuario declara cumplimiento apenas se habilita el boton, sin preparar operacion productiva.
+
+Riesgo:
+
+- La empresa queda operando como emisor electronico.
+- Debe cumplir las obligaciones desde el mes correspondiente.
+
+Solucion:
+
+- Antes de declarar, confirmar que hay plan para CAF productivos, folios, respaldos, consulta de estados y primera emision controlada.
+
+## Mezclar folios de certificacion y produccion
+
+Sintoma:
+
+- Se intenta emitir en produccion usando CAF de certificacion, o viceversa.
+
+Solucion:
+
+- Separar carpetas: `caf/certificacion` y `caf/produccion`.
+- Guardar en base de datos el tipo de ambiente por folio.
+- No reutilizar scripts con rutas hardcodeadas.

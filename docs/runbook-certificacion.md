@@ -131,11 +131,33 @@ Luego de enviar:
 - Espera correo del SII o cambio en el portal.
 - No reenvies mientras esta en revision salvo rechazo.
 
+Correo esperado si queda aprobado:
+
+```text
+La revision de las muestras impresas ha sido APROBADA
+```
+
+El correo puede indicar que el representante legal debe realizar la declaracion de cumplimiento.
+
 ## 9. Declaracion de cumplimiento
 
 Si las muestras impresas quedan conformes, el portal habilita la declaracion final de cumplimiento.
 
-Lee con cuidado antes de declarar. Despues de esta etapa, el SII puede autorizar emision productiva.
+Ruta usada:
+
+```text
+https://maullin.sii.cl/cvc_cgi/dte/pe_avance7
+```
+
+Lee con cuidado antes de declarar. El portal advierte que al declarar cumplimiento la empresa queda operando en el sistema de facturacion electronica.
+
+Resultado esperado:
+
+```text
+El contribuyente [RAZON SOCIAL] Rut [RUT], esta autorizada para operar como emisor de documentos tributarios electronicos.
+```
+
+Si ves ese mensaje, la certificacion esta cerrada.
 
 ## 10. Produccion
 
@@ -145,6 +167,22 @@ Solo despues de la autorizacion final:
 - Cambia SimpleAPI a `Ambiente: 1`.
 - Usa folios productivos.
 - Mantiene un control estricto de folios usados.
+- Haz una primera emision controlada antes de automatizar.
+
+Ver detalle en [Paso final y produccion](paso-final-produccion.md).
+
+## 11. Trabajar con Codex o Claude Code
+
+Puedes usar un agente para preparar archivos, revisar errores y mantener el estado del proyecto.
+
+El agente no debe:
+
+- Imprimir secretos.
+- Enviar al SII sin confirmacion.
+- Declarar cumplimiento sin confirmacion humana.
+- Emitir documentos productivos masivos sin una primera prueba controlada.
+
+Ver [Trabajar con Codex o Claude Code](codex-claude-code.md).
 
 ## Reglas de oro
 
@@ -153,3 +191,5 @@ Solo despues de la autorizacion final:
 - No edites XML firmados manualmente despues de firmarlos.
 - Verifica PDFs antes de subirlos.
 - En cedibles, confirma que el PDF contiene la palabra `CEDIBLE`.
+- Guarda un estado escrito del proceso con fecha, evidencia y siguiente paso.
+- Al pasar a produccion, separa completamente CAF/folios productivos de los de certificacion.

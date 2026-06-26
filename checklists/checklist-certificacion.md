@@ -63,7 +63,22 @@
 ## Cierre
 
 - [ ] Revision SII conforme.
+- [ ] Correo de aprobacion de muestras impresas guardado o registrado.
 - [ ] Declaracion de cumplimiento realizada.
-- [ ] Autorizacion productiva recibida.
+- [ ] Portal muestra autorizacion como emisor electronico.
 - [ ] CAF de produccion solicitados.
 - [ ] Sistema cambiado a ambiente produccion.
+- [ ] Primera factura productiva revisada por humano antes de emitir.
+- [ ] Primera factura productiva enviada.
+- [ ] TrackID productivo consultado.
+- [ ] XML/PDF/respuesta productiva respaldados.
+
+## Operacion con agentes
+
+- [ ] `.env` fuera de Git.
+- [ ] Certificados fuera de Git.
+- [ ] CAF fuera de Git.
+- [ ] XML/PDF reales fuera de Git.
+- [ ] Archivo privado `docs/ESTADO.md` actualizado.
+- [ ] Regla de no envio final sin confirmacion humana acordada.
+- [ ] Regla de no declaracion legal sin confirmacion humana acordada.

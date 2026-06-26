@@ -12,6 +12,9 @@ Este repositorio nace desde una certificacion real que paso por:
 - Set de intercambio.
 - Muestras impresas PDF.
 - Revision final del SII.
+- Declaracion de cumplimiento.
+- Autorizacion como emisor electronico.
+- Preparacion para facturar en produccion.
 
 La idea es que otra empresa no tenga que descubrir el proceso a punta de ensayo y error.
 
@@ -26,6 +29,8 @@ La idea es que otra empresa no tenga que descubrir el proceso a punta de ensayo 
   - Extraer la pagina cedible desde un PDF de SimpleAPI `v2/cedible`.
   - Sanitizar nombres/textos para compatibilidad SII.
 - Notas de problemas frecuentes y sus soluciones.
+- Guia para trabajar el proceso desde Codex o Claude Code.
+- Pasos finales para pasar de certificacion a facturacion productiva.
 
 ## Que NO incluye
 
@@ -45,6 +50,7 @@ Por seguridad y privacidad, este repo no incluye:
 - Certificado digital vigente del firmante autorizado.
 - CAF de certificacion descargados desde SII.
 - Acceso al portal de certificacion SII.
+- CAF de produccion solo despues de quedar autorizado.
 
 Instalar dependencias:
 
@@ -66,7 +72,10 @@ pip install -r requirements.txt
 8. Sube las muestras impresas.
 9. Espera revision.
 10. Declara cumplimiento.
-11. Recien con autorizacion final, pasa a produccion.
+11. Confirma que el portal indique que la empresa esta autorizada como emisor electronico.
+12. Solicita CAF productivos.
+13. Configura SimpleAPI con `Ambiente: 1`.
+14. Emite el primer documento productivo controlado.
 
 ## Advertencia importante
 
@@ -76,6 +85,8 @@ No uses folios ni ambiente de produccion antes de terminar la certificacion. El 
 
 - [Runbook completo](docs/runbook-certificacion.md)
 - [Muestras impresas PDF](docs/muestras-impresas.md)
+- [Paso final y produccion](docs/paso-final-produccion.md)
+- [Trabajar con Codex o Claude Code](docs/codex-claude-code.md)
 - [Errores frecuentes](docs/errores-frecuentes.md)
 - [Checklist general](checklists/checklist-certificacion.md)
 

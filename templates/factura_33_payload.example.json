@@ -1,0 +1,40 @@
+{
+  "Documento": {
+    "Encabezado": {
+      "IdentificacionDTE": {
+        "TipoDTE": 33,
+        "Folio": 1,
+        "FechaEmision": "2026-01-01",
+        "FormaPago": 2
+      },
+      "Emisor": {
+        "Rut": "11111111-1",
+        "RazonSocial": "EMPRESA DEMO SPA",
+        "Giro": "SERVICIOS INFORMATICOS",
+        "DireccionOrigen": "AVENIDA DEMO 123",
+        "ComunaOrigen": "SANTIAGO"
+      },
+      "Receptor": {
+        "Rut": "22222222-2",
+        "RazonSocial": "CLIENTE DEMO SPA",
+        "Giro": "COMERCIO",
+        "Direccion": "CALLE CLIENTE 456",
+        "Comuna": "SANTIAGO"
+      },
+      "Totales": {
+        "MontoNeto": 10000,
+        "TasaIVA": 19,
+        "IVA": 1900,
+        "MontoTotal": 11900
+      }
+    },
+    "Detalles": [
+      {
+        "Nombre": "Servicio demo",
+        "Cantidad": 1,
+        "Precio": 10000,
+        "MontoItem": 10000
+      }
+    ]
+  }
+}
