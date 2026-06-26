@@ -87,6 +87,7 @@ No uses folios ni ambiente de produccion antes de terminar la certificacion. El 
 - [Muestras impresas PDF](docs/muestras-impresas.md)
 - [Paso final y produccion](docs/paso-final-produccion.md)
 - [Trabajar con Codex o Claude Code](docs/codex-claude-code.md)
+- [Guia paso a paso con agente](docs/guia-paso-a-paso-agente.md)
 - [Errores frecuentes](docs/errores-frecuentes.md)
 - [Checklist general](checklists/checklist-certificacion.md)
 
